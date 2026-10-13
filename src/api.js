@@ -2217,7 +2217,6 @@ export async function requestAccountsRefreshAndWait(accountIds = null, timeout =
   if (!accountIds) {
     // const accountData = await this.getAccounts()
     const accountData = await getAccounts()
-    console.log(accountData)
     accountIds = accountData.accounts.map((x) => x.id)
   }
 
